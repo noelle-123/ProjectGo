@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="Favicon.jpeg" type="image/x-icon">
+       
+    <title>Let's Go Airlines</title>
+    <p align="left">
+    <img src="logo.jpeg" alt="My sample image" width=1500px height="300px">
+    <link rel="stylesheet" type="text/css" href="Styling.css">  
+    </head>
+    <body>
+        
+        <nav>
+            
+            <a href="#Overview">Overview</a>
+            <a href="#Visions">Visions</a>
+            <a href="#Values">Values</a>
+            <a href="Ticket Booking.html">Ticket Booking</a>
+        </nav>
+        <h2 style="text-align:center">Search for flights</h2>
+        
+        
+      
+        <center>
+            <form>
+            <div style="margin-top: 50px"></div>
+            
+            
+            <Body style="background-color:rgb(81, 232, 243)">
+            
+            <tr>
+                <div style="margin-top: 40px"></div>
+                <form name= "forms" method="post" onSubmit="return validate()">
+                    
+                <td>Origin City</td>
+                <select name="origin city">
+                    
+                    <option value="banglore">Banglore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="kochi">Kochi</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="mumbai">Mumbai</option>
+                </select>
+            </tr>
+            <br>
+            <br>
+            <br>
+            <tr>
+                <td>Destination City</td>
+                <select name="destination city">
+                    
+                    <option value="banglore">Banglore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="kochi">Kochi</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="mumbai">Mumbai</option>
+                </select>
+            </tr>
+            <br>
+            <br>
+            <br>
+            <tr>
+                <td>Date</td>
+                <input type="date" name="date" min ="2021-08-23">
+            </tr>
+            <br>
+            <br>
+            <br>
+            <tr>
+                <td>Number of Passengers</td>
+                <input type="number" name="number of passengers" value="1" max="2">
+            </tr>
+            <br>
+            <br>
+            <br>
+            <tr>   
+                <td colspan="2" align="center">
+                <input type ="submit"  name="Submit" value="Submit">
+            </td>
+            </tr>
+           
+        </center>
+        </table>
+        </body>
+    </form>
+    <script type="text/javascript">
+    function validate()
+    {
+        var from = document.forms["forms"]["origin city"].value;
+        var to =  document.forms["forms"]["destination city"].value;
+            var date = document.forms["forms"]["date"].value;
+          if(date=="") 
+          {
+            alert("enter the Date of journey");
+          return false;}
+          if(from==to){
+            alert("enter the valid details");
+          return false;
+
+          }
+          }
+            
+    </script>
+    </center>
+    }
+        
+        
+
+<section class="firstsection">
+    <div class="box-main">
+        <div class="firstHalf">
+            <style>
+                #Overview{text-align:center}
+                #Visions{text-align:center}
+                #Values{text-align:center}
+            </style>
+            <div style="margin-top: 40px">
+            <h1 class="text-big" id="Overview">Overview</h1>
+            <p class="text-small">
+             <em>Let's Go Airlines is the project name for a new airline company that will focus on single class long-haul scheduled flights.Let's Go Airlines will capitalise on the widening gap in long-haul travel between business and economy class.Let's Go Airlines will operate Boeing 757-200 aircraft configured with 80 seats which will provide a very spacious and pleasant environment.The aircraft will be equipped with the latest technology in order to enable the business traveller to use his time efficiently while travelling. The company will
+             start by leasing two aircraft and expand its fleet to 6 aircraft by the second year of operation.</em>
+    <br>
+    <br>
+    <em>Let’s Go will be a "business to business" airline and will focus exclusively on the premium/business segment of the market. It will offer customers a compelling value proposition: a high level of service and comfort at 50 percent of the current published business-class fare. In addition to an attractive price, Let’s Go will offer passengers considerable time savings, convenience, and will focus on creating a lifestyle appeal.</em></p>
+            </div>
+            </div>
+            </section>
+   <div style="margin-top: 40px"></div>
+    
+    <section class="Secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                
+                <h1 class="text-big" id="Visions">Visions</h1>
+                <p class="text-small">
+  <p><em>Let's Go aims to establish itself as a niche player in the long-haul market of business travel. By continuously focusing on the needs of the premium class business traveller, Let’s Go will provide the best value proposition in the markets it serve.</em> </p>
+                </div>
+                </div>
+                </section>
+  <div style="margin-top: 40px"></div>
+  <section class="Thirdsection">
+    <div class="box-main">
+        <div class="firstHalf">
+            <h1 class="text-big" id="Values">
+                Values
+            </h1>
+            <p class="text-small">
+  
+  <p><em>We exist to provide a valuable service to our customers, a rewarding opportunity for our employees, and profitability to our shareholders. We believe that success in this endeavor depends on our employees. Satisfied employees lead to satisfied customers, which lead to satisfied shareholders. To achieve this, we enable our employees to act with an entrepreneurial spirit, and we value those willing to take responsibility for their actions and the consequences of those actions.</em>
+      <br>
+      <br>
+      <em> We treat employees as family, which fosters intimacy, informality, strong relationships, caring attitudes, and it makes work more fun. We want our customers to experience legendary service that makes a lasting impression. Providing exceptional value to customers requires hard work and concentration. We believe in doing things right the first time. We take pride in our efforts as well as the rewards. Throughout this endeavor, safety will be the overriding force behind any decision.</em></p>
+  </div>
+  </div>
+  </section>
+  
+<br>
+<br>
+<div style="margin-top: 30px"></div>
+
+</style>
+
+<div class="footer-content">
+    
+    Contact Us:<br>
+    <br>
+    Email: xyz@LetsGoAirlines.com<br>
+    <br>
+    Contact number: 1234567890<br>
+    <br>
+</div>
+
+    </body>
+
+</html>

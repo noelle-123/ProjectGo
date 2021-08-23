@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="Favicon.jpeg" type="image/x-icon">
+        <title>Ticket Booking</title>
+    </head>
+    <body>
+        <a href="Let's Go Airlines.html">Go to Let's Go Airlines Webpage</a>
+        <br>
+        <br>
+        <center>
+    <h1>Ticket Booking</h1>
+    <Body style="background-color:rgb(81, 232, 243)">
+        <form action="index.php" method="post">
+        <form name="Ticket Booking"  onSubmit="return validate()">
+        
+          <div>
+              <label>First Name</label>
+              <input type="text" name="first name" maxlength="20" >
+          </div>
+          <br>
+          <br>
+          <div>
+            <label>Last Name</label>
+            <input type="text" name="last name" maxlength="20">
+        </div>
+        <br>
+        <br>
+           <div>
+            <label>Phone number</label>
+            <input type="tel" name="phone number">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other
+            </select>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label>Age</label>
+            <input type="number" name="age" value="18">
+        </div>
+        <br>
+        
+        <br>
+       
+        <br>
+        
+           
+            <br>
+            <br>
+        <button class="btn">Submit</button>
+      </form>
+      </form>
+      </center>
+      <script type="text/javascript">
+        function validate()
+        {
+            var first=document.forms["Ticket Booking"]["first name"].value;
+            var last=document.forms["Ticket Booking"]["last name"].value;
+            var phone=document.forms["Ticket Booking"]["phone number"].value;
+            var email=document.forms["Ticket Booking"]["email"].value;
+            var gender=document.forms["Ticket Booking"]["gender"].value;
+            var age=document.forms["Ticket Booking"]["age"].value;
+            
+            if(first=="")
+            {
+                alert("enter the first name")
+                return false;
+            }
+            if(! isNaN(first))
+            {
+                alert("name should be in character");
+                return false; 
+            }
+            if(last=="")
+            {
+                alert("enter the last name")
+                return false;
+            }
+            if(! isNaN(last))
+            {
+                alert("name should be in character");
+                return false; 
+            }
+            var at = email.indexOf("@");
+            var dot = email.lastIndexOf(".");
+            if(at<1 || dot<at+2|| dot+2 >= email.length)
+            {
+                alert("Not a valid email");
+                return false;
+            }
+            
+            if(phone =="")
+            {
+                alert("enter phone number");
+                return false;
+            }
+            if(isNaN(phone))
+            {
+                alert("phone number should be in digits");
+                return false;
+            }
+            if(phone.length!=10)
+            {
+                alert("must be 10 digit number");
+                return false;
+            }
+            if(gender =="")
+            {
+                alert("select a gender");
+                return false;
+            }
+            if(age.length>3)
+            {
+                alert("Age should not be longer than 3");
+                return false;
+            }
+
+        }
+    
+    </script>
+    </body>
+</html>
